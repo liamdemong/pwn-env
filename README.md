@@ -25,3 +25,4 @@ You can optionally set up VS Code to run inside the container.
 
 * Install [Visual Studio Code](https://code.visualstudio.com/) and then install the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension.
 * Configure VSCode to use the container. Put [the contents of this file](.devcontainer/devcontainer.json) in `.devcontainer/devcontainer.json` inside the directory with your files for a given CTF.
+* Open the command palette using `Cmd+Shift+P` and search for and select `Dev Containers: Reopen in Container`.
