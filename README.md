@@ -6,7 +6,7 @@ The first step is to [install Docker](https://docs.docker.com/desktop/install/ma
 The pre-built Docker environment is hosted on the GitHub Container Registry (GHCR). To download the container, enter this command:
 
 ```bash
-docker pull ghcr.io/liamdemong/pwn:latest
+docker pull --platform linux/amd64 ghcr.io/liamdemong/pwn:latest
 ```
 
 You need to ensure that the Docker desktop application is actively running on your machine when pulling.
