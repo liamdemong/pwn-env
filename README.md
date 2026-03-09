@@ -14,10 +14,10 @@ You need to ensure that the Docker desktop application is actively running on yo
 Now navigate to the directory where your current Pwn CTF files are located. Then run this command:
 
 ```bash
-docker run --platform linux/amd64 -it --init --rm -v $(pwd):/ctf pwn bash
+docker run --platform linux/amd64 -it --init --rm -v $(pwd):/ctf ghcr.io/liamdemong/pwn:latest bash
 ```
 
-You will now have your files and terminal inside of an emualted x86-64 Linux environment. Type `exit` to leave the container at any point.
+You will now have your files and terminal inside of an emulated x86-64 Linux environment. Type `exit` to leave the container at any point.
 
 ## Set Up Visual Studio Code
 
