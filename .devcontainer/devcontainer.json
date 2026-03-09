@@ -1,0 +1,24 @@
+{
+  "name": "pwn",
+  "image": "ghcr.io/liamdemong/pwn:latest",
+  "runArgs": ["--platform=linux/amd64", "--init"],
+  "workspaceMount": "source=${localWorkspaceFolder},target=/ctf,type=bind",
+  "workspaceFolder": "/ctf",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.debugpy",
+        "ms-vscode.cpptools"
+      ],
+      "settings": {
+        "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+        "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
+        "C_Cpp.default.cStandard": "c11",
+        "C_Cpp.default.cppStandard": "c++17",
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "python.defaultInterpreterPath": "/usr/bin/python3"
+      }
+    }
+  }
+}
